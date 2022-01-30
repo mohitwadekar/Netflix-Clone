@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="browse.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <ul>
+                <li><a href="index.html"><img src="/res/logo.png" alt="Netflix Logo"></a></li>
+                <li><a href="#" onclick="toggleFilms()">Films</a></li>
+                <li><a href="#" onclick="toggleSeries()">Series</a></li>
+            </ul>
+        </header>
+        <div class="main">
+            <h1>Watch Joker Now</h1>
+            <p>Forever alone in a crowd, failed comedian Arthur Fleck seeks connection as he walks the streets of Gotham City. Arthur wears two masks, the one he paints for his day job as a clown, and the guise he projects in a futile attempt to feel like he is part of the world around him.</p>
+            <button class="play-btn">Play</button>
+            <div class="trailer">
+                <video src="/res/browse/videos/video.mp4" controls="true"></video>
+                <span class="close">&times;</span>
+            </div>
+        </div>
+    </div>
+    <div class="container-display-items">
+        <div class="films" id="films" style="display: none;">
+            <div class="drama">
+                <h2>Drama</h2>
+                <div class="images">
+                    <img src="/res/browse/images/drama/d1.jpg" alt="">
+                    <img src="/res/browse/images/drama/d2.jpg" alt="">
+                    <img src="/res/browse/images/drama/d3.jpg" alt="">
+                    <img src="/res/browse/images/drama/d4.jpg" alt="">
+                </div>
+            </div>
+            <div class="children">
+                <h2>Children</h2>
+                <div class="images">
+                    <img src="/res/browse/images/children/c1.jpg" alt="">
+                    <img src="/res/browse/images/children/c2.jpg" alt="">
+                    <img src="/res/browse/images/children/c3.jpg" alt="">
+                    <img src="/res/browse/images/children/c4.jpg" alt="">
+                </div>
+            </div>
+            <div class="thriller">
+                <h2>Thriller</h2>
+                <div class="images">
+                    <img src="/res/browse/images/thriller/t1.jpg" alt="">
+                    <img src="/res/browse/images/thriller/t2.jpg" alt="">
+                    <img src="/res/browse/images/thriller/t3.jpg" alt="">
+                    <img src="/res/browse/images/thriller/t4.jpg" alt="">
+                </div>
+            </div>
+            <div class="suspense">
+                <h2>Suspense</h2>
+                <div class="images">
+                    <img src="/res/browse/images/suspense/s1.jpg" alt="">
+                    <img src="/res/browse/images/suspense/s2.jpg" alt="">
+                    <img src="/res/browse/images/suspense/s3.jpg" alt="">
+                    <img src="/res/browse/images/suspense/s4.jpg" alt="">
+                </div>
+            </div>
+            <div class="romance">
+                <h2>Romance</h2>
+                <div class="images">
+                    <img src="/res/browse/images/romance/r1.jpg" alt="">
+                    <img src="/res/browse/images/romance/r2.jpg" alt="">
+                    <img src="/res/browse/images/romance/r3.jpg" alt="">
+                    <img src="/res/browse/images/romance/r4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="series" id="series" style="display: none;">
+            <div class="children-series">
+                <h2>Children</h2>
+                <div class="images">
+                    <img src="/res/browse/images/children-series/cs1.jpg" alt="">
+                    <img src="/res/browse/images/children-series/cs2.jpg" alt="">
+                    <img src="/res/browse/images/children-series/cs3.jpg" alt="">
+                    <img src="/res/browse/images/children-series/cs4.jpg" alt="">
+                </div>
+            </div>
+            <div class="comedies">
+                <h2>Comedies</h2>
+                <div class="images">
+                    <img src="/res/browse/images/comedies/comedy1.jpg" alt="">
+                    <img src="/res/browse/images/comedies/comedy2.jpg" alt="">
+                    <img src="/res/browse/images/comedies/comedy3.jpg" alt="">
+                    <img src="/res/browse/images/comedies/comedy4.jpg" alt="">
+                </div>
+            </div>
+            <div class="crime">
+                <h2>Crime</h2>
+                <div class="images">
+                    <img src="/res/browse/images/crime/crime1.jpg" alt="">
+                    <img src="/res/browse/images/crime/crime2.jpg" alt="">
+                    <img src="/res/browse/images/crime/crime3.jpg" alt="">
+                    <img src="/res/browse/images/crime/crime4.jpg" alt="">
+                </div>
+            </div>
+            <div class="documentaries">
+                <h2>Documentaries</h2>
+                <div class="images">
+                    <img src="/res/browse/images/documentaries/doc1.jpg" alt="">
+                    <img src="/res/browse/images/documentaries/doc2.jpg" alt="">
+                    <img src="/res/browse/images/documentaries/doc3.jpg" alt="">
+                    <img src="/res/browse/images/documentaries/doc4.jpg" alt="">
+                </div>
+            </div>
+            <div class="feel-good">
+                <h2>Feel Good</h2>
+                <div class="images">
+                    <img src="/res/browse/images/feel-good/fg1.jpg" alt="">
+                    <img src="/res/browse/images/feel-good/fg2.jpg" alt="">
+                    <img src="/res/browse/images/feel-good/fg3.jpg" alt="">
+                    <img src="/res/browse/images/feel-good/fg4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footercon">
+            <div class="flex1">
+
+                <h5>Questions? Call 000-800-040-1843</a>
+                </h5>
+
+            </div>
+
+            <ul class="list1">
+
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Investor Relations</a></li>
+                <li><a href="">Privacy</a></li>
+
+                <li><a href="">Speed Test</a></li>
+
+            </ul>
+            <ul class="list1">
+                <li><a href="">Help Centre</a></li>
+                <li><a href="">Jobs</a></li>
+                <li><a href="">Cookie Preferences</a></li>
+                <li><a href="">Legal Notices</a></li>
+
+            </ul>
+            <ul class="list1">
+                <li><a href="">Account</a></li>
+                <li><a href="">Ways to Watch</a></li>
+                <li><a href="">Corporate Information</a></li>
+                <li><a href="">Only on Netflix</a></li>
+
+
+            </ul>
+            <ul class="list1">
+                <li><a href="">Media Centre</a></li>
+                <li><a href="">Terms of Use</a></li>
+                <li><a href="">Contact Us</a></li>
+
+
+
+            </ul>
+            <div class="end">
+                <h2>
+                    Netflix India
+                </h2>
+                <h2>
+                </h2>
+            </div>
+        </div>
+
+    </div>
+    <script src="video.js"></script>
+    <script src="films-series.js"></script> 
+</body>
+</html>
